@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A plugin to manage courses in the Canvas LMS",
   "author": "Tim Richards",
-  "repository": "",
+  "repository": "https://github.com/timdrichards/canvas-gantry-plugin.git",
   "dependencies": [],
   "env": {}
 }
