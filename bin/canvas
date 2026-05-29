@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # canvas-gantry-plugin — main command
 # TODO: add your implementation here
-echo "Hello from the canvas-gantry-plugin plugin!"
+echo "Hello from the canvas gantry plugin!"
