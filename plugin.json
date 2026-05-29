@@ -4,6 +4,7 @@
   "description": "A plugin to manage courses in the Canvas LMS",
   "author": "Tim Richards",
   "repository": "https://github.com/timdrichards/canvas-gantry-plugin.git",
+  "postInstall": "npm install --prefix . --silent",
   "dependencies": [],
   "env": {}
 }

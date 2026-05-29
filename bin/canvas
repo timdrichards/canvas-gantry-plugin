@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-# canvas-gantry-plugin — main command
-# TODO: add your implementation here
-echo "Hello from the canvas gantry plugin!"
+PLUGIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+if [[ ! -d "$PLUGIN_DIR/node_modules" ]]; then
+  echo "  → Installing canvas plugin dependencies..." >&2
+  npm install --prefix "$PLUGIN_DIR" --silent >&2 \
+    || { echo "error: npm install failed. Check your network connection." >&2; exit 1; }
+fi
+exec node --disable-warning=DEP0040 "$PLUGIN_DIR/src/canvas.js" "$@"

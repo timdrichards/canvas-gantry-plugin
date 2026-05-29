@@ -1,0 +1,10 @@
+{
+  "name": "canvas-gantry-plugin",
+  "version": "1.0.0",
+  "description": "A plugin to manage courses in the Canvas LMS",
+  "type": "module",
+  "dependencies": {
+    "juice": "^10.0.0",
+    "marked": "^12.0.0"
+  }
+}
